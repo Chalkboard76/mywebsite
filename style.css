@@ -1,6 +1,6 @@
 .site-header {
     padding-top: 30px;
-    background: #000000;
+    background: rgba(0, 0, 0, 0.30);
     color: #ffffff;
 }
 
@@ -19,4 +19,13 @@
     content: "";
     display: table;
     clear: both;
+}
+
+a {
+    
+}
+
+body {
+    background-image: url("background.jpg");
+    background-size: 100%;
 }
