@@ -1,6 +1,5 @@
 .site-header {
     padding: 10px;
-    opacity: 0.7;
 }
 
 .main-pic {
@@ -58,8 +57,8 @@ p {
 }
 
 body {
-    background: -moz-linear-gradient(-45deg, rgba(163,251,255,0.5) 0%, rgba(208,218,220,0.5) 48%, rgba(223,207,208,0.5) 64%, rgba(255,183,183,0.5) 99%, rgba(10,8,9,0.5) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, rgba(163,251,255,0.5) 0%,rgba(208,218,220,0.5) 48%,rgba(223,207,208,0.5) 64%,rgba(255,183,183,0.5) 99%,rgba(10,8,9,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, rgba(163,251,255,0.5) 0%,rgba(208,218,220,0.5) 48%,rgba(223,207,208,0.5) 64%,rgba(255,183,183,0.5) 99%,rgba(10,8,9,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80a3fbff', endColorstr='#800a0809',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: #ff6e7f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #bfe9ff, #ff6e7f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000e5f05, #ff6e7f05); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
