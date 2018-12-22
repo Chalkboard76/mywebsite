@@ -49,24 +49,124 @@
                     and vibration for tactile feedback to the user.
                 </p>
                 <h2>Graphics Engine</h2>
+                <p>This graphics engine features a simple 2D graphics engine that 
+                    could be used to make games or animations. I optimized the engine 
+                    to be able to handle rendering over 10,000 textured sprites at 60 
+                    frames per second, and this is on an old computer that only has Intel's 
+                    CPU graphics. The engine also features the rendering of textured 3D 
+                    shapes and objects, and a 3D "sandbox" mode that allows the user 
+                    to have the effect of flying around the 3D rendered world. This 
+                    project was another on of my earlier projects. I wanted to learn C++ 
+                    and I thought (correcty) that this would be a fun project. I didn't 
+                    know what I was getting myself into with graphics programming, so by 
+                    accident I learned some OpenGL along with the C++.
+                </p>
                 <h2>Tied (animated short film)</h2>
+                <p>I made a short film called "Tied" with a group of 4 as a part of the UCBUGG
+                    organization at Berkeley. We made the entire thing in Autodesk Maya. This 
+                    includes modeling, rigging, animating, and rendering. Although 
+                    this wasn't a programming project, it was very tough to 
+                    finish and it helped me improve my teamwork skills. The short 
+                    can be watched 
+                    <a href="https://www.youtube.com/watch?v=Sm7wdAa_6fM">here.</a>
+                </p>
                 <h2>Bomberman</h2>
-                <p>This is a fully finished bomberman emulator made entirely 
-                    from scratch in Snap.
+                <p>For my first big programming project me and one of 
+                    my friends made a Bomberman emulator entirely from 
+                    scratch in Snap. This version has both multiplayer 
+                    and single player options. Multiplayer is full of 
+                    various advantageous items and power-ups. Single player 
+                    features many levels with some basic AIs. Overall it was 
+                    a very fun project that taught me the essentials of 
+                    programming.
                 </p>
             </div>
             <div class="about-me">
                 <h1>Socket Mobile</h1>
                 <h2>Scanner Model Web API</h2>
+                <p>For this project I had to convert an existing PHP/MySQL 
+                    web api to an Azure/C# web api. Previously the scanner apps 
+                    had been using another company's Cake PHP based web api to 
+                    pull JSON data from a MySQL database. Socket Mobile wanted 
+                    host this web-api/database internally because it would be easier to manage, but 
+                    Socket Mobile operates through the microsoft ecosystem with 
+                    Windows servers. Using Azure Tables as a database and C#/
+                    .NET api as the backend would make the most sense. Azure tables 
+                    are not meant for storing large amounts of data, so I 
+                    had to compress all of the entries before storing them in the 
+                    table and decompress them when queried. I made an admin page 
+                    for database maintanence (primarily adding new model entries). 
+                    The whole website had authenticated security; I used an SQL database 
+                    for a list of users and their encrypted/salted passwords. Each 
+                    user is required to login with their passwords, and only priveledged 
+                    users were allowed to access the admin page.
+                </p>
                 <h2>Scan Engine Updater</h2>
+                <p>This program was used by the Operations team to install 
+                    and update firmware in the tiny engines inside of the 
+                    scanners we make. I used C# and implemented the Y-Modem 
+                    transfer protocal. I configured the program to be as user 
+                    friendly and efficient as possible; after plugging in the 
+                    engine to a circuit board, all you have to do is press any 
+                    button on the keyboard and watch a progress bar. Multiple 
+                    engines could be programmed simultaneously as well. All in all, 
+                    it greatly improved the efficiency of programming hundreds of 
+                    scan engines.
+                </p>
                 <h2>Automatic Sharepoint Uploader</h2>
+                <p>
+                    I wrote several Powershell and python programs that upload new scanner 
+                    firmware builds to Sharepoint. New versions of the firmware needed to 
+                    be QA tested. The QA testing was handled by another company, and Sharepoint 
+                    was where they accessed the binaries for the new builds. The powershell part 
+                    was not too bad because there were libraries that made the whole process 
+                    relatively simple with a few function calls. I had to use python for other 
+                    builds that were on a Mac. The python was more difficult because I had to 
+                    format and send HTTP requests to Sharepoints web-api. I then recieved 
+                    an authenticated token, which I used for another HTTP request to upload 
+                    my data to sharepoint. I encrypted the password used for authentification 
+                    and didn't add it to the repository. The encrypted password file only 
+                    existed on the build servers themselves.
+                </p>
                 <h2>Data Conversion Program</h2>
+                <p>This was a helper program for the web-api described at the top 
+                    of this section. The program pulls the raw JSON data from the old 
+                    web-api, reformats certain entries, compresses the data, and then 
+                    uses Microsoft's .NET libraries to insert entries into the Azure 
+                    database. 
+                </p>
                 <h2>Firmware Installers</h2>
+                <p>
+                    I created Windows installer applications using WiX (XML). 
+                    These installers were used for quickly updating test 
+                    fixtures with the latest firmware builds.
+                </p>
                 <h2>HID Keyboard Tables</h2>
+                <p>
+                    I created a script that made tables mapping HID key codes to 
+                    key inputs. Each table represented a different keyboard layout (US, 
+                    International, French, Chinese, etc.). These tables were used 
+                    in the scanners' "keyboard" mode which allows the scanners to 
+                    output data being scanned to a computer.
+                </p>
             </div>
             <div class="about-me">
                 <h1>School</h1>
                 <h2>AYPC (A python compiler)</h2>
+                <p>
+                    A python compiler written in C++ for CS 164. The python 
+                    files are first lexed and parsed using Flex and Bison as 
+                    underlying programming language to create an abstract syntax 
+                    tree, or AST. Static semantic analysis is then used on the 
+                    AST. This handles scoping rules and the other semantics 
+                    of the language. It tags each variable with a number to tie 
+                    it to it's declaration. After static semantic analysis, C++ 
+                    code is generated based on the this new abstract syntax tree. 
+                    Most compilers must generate assembly, but generating C++ code 
+                    and compiling that works almost just as well. The only benefit 
+                    of going straight to assembly is further optimization of the 
+                    code.
+                </p>
                 <h2>PintOS</h2>
                 <h2>Cryptographically Secure Database</h2>
                 <h2>Pacman AI</h2>
