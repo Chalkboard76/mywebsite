@@ -154,21 +154,46 @@
                 <h1>School</h1>
                 <h2>AYPC (A python compiler)</h2>
                 <p>
-                    A python compiler written in C++ for CS 164. The python 
-                    files are first lexed and parsed using Flex and Bison as 
-                    underlying programming language to create an abstract syntax 
-                    tree, or AST. Static semantic analysis is then used on the 
-                    AST. This handles scoping rules and the other semantics 
-                    of the language. It tags each variable with a number to tie 
-                    it to it's declaration. After static semantic analysis, C++ 
-                    code is generated based on the this new abstract syntax tree. 
-                    Most compilers must generate assembly, but generating C++ code 
-                    and compiling that works almost just as well. The only benefit 
-                    of going straight to assembly is further optimization of the 
-                    code.
+                    A python compiler written in C++ for CS 164 in a team of 3. Python 
+                    files are first lexed and parsed to create an "abstract syntax 
+                    tree", or AST. This part was written in Flex/Bison, which are 
+                    languages designed specifically for lexing and parsing. The 
+                    compiler then performs static semantic analysis on the AST; 
+                    this handles scoping rules and the other semantics defined 
+                    by Python 2.7. Primarily, this stage tags each variable with 
+                    a number that represents its declaration (variables with the 
+                    same name that were declared in a different scope will have 
+                    different names i.e x-297 and x-300). After static semantic 
+                    analysis, the compiler generates C++ code using the tagged
+                    abstract syntax tree. Most of the common compilers generate 
+                    assembly code, but generating and then compiling C++ code 
+                    works fine. The only benefit of going straight to assembly is 
+                    further optimization of the code. However, optimization is 
+                    extremely tricky and far out of the scope of an intro compiler 
+                    class.
                 </p>
                 <h2>PintOS</h2>
+                <p>
+                    PintOS is an educational operating system that I implemented 
+                    for CS 162 in a team of 4. PintOS is a simple operating system 
+                    where processes are limited to one thread. We did not implement 
+                    all parts of PintOS. We implimented a clock system to put to sleep 
+                    and reawaken threads, synchronization primatives (locks & semaphores), 
+                    a priority scheduler, an MLFQ scheduler, argument passing for user 
+                    programs, process control syscalls, file operation syscalls, a buffer 
+                    cache for disk blocks, an extensible file system, and a directory system. 
+                    I contributed to all of these parts of the project except for argument 
+                    passing for user programs (this was done all by another group member). 
+                    Implementing these features in PintOS was not easy, and it required us 
+                    to gain a deep level of understanding of core OS concepts. Debugging this 
+                    project was a giant headache, and it greatly improved my GDB and C++ 
+                    skills.
+                </p>
                 <h2>Cryptographically Secure Database</h2>
+                <p>
+                    This database is a simple "dropbox" for data. My design is cryptographically 
+                    secure and guarantees both integrity and confidentiality. 
+                </p>
                 <h2>Pacman AI</h2>
                 <h2>NP Hard Algorithm</h2>
                 <h2>TCP/Distance Vector Router</h2>
