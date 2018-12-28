@@ -191,12 +191,42 @@
                 </p>
                 <h2>Cryptographically Secure Database</h2>
                 <p>
-                    This database is a simple "dropbox" for data. My design is cryptographically 
-                    secure and guarantees both integrity and confidentiality. 
+                    This database is a simple "dropbox" for data. It stores both encrypted user 
+                    information and encrypted user data. My design is cryptographically 
+                    secure and guarantees both integrity and confidentiality. A file placed into 
+                    the database is only available it's owner and anybody who the owner has shared 
+                    it with. Since the contents of the database are encrypted, the server cannot 
+                    learn any information from what is in the database. There is also a public key 
+                    data store, which is used for sharing access to files. Sharing privileges can 
+                    also be revoked by the owner of the file. This project was extremeley design heavy. 
+                    I primarily used RSA encryption/decryption, CFB encryption/decryption, RSA signatures/
+                    verification, and SHA256 MAC. This was also my first and only time using GoLang, 
+                    which wasn't too hard to learn is actually a very nice programming language.
                 </p>
                 <h2>Pacman AI</h2>
-                <h2>NP Hard Algorithm</h2>
+                <p>
+                    This was more like a series of 5 mini-projects assigned in CS 188 (Artificial 
+                    intelligence). Me and my partner designed multiple artificial intelligence 
+                    "pacman" agents to use a variety of common AI algorithms in a virtual game 
+                    world. We used BFS, DFS, A* search, minimax, expectimax, reinforcement learning 
+                    with value iteration, Q-Learning, model-free approximation algorithms, particle 
+                    filtering, and machine learning.
+                </p>
                 <h2>TCP/Distance Vector Router</h2>
+                <p>
+                    These are two separate projects that I completed for CS 168 
+                    (Internet Architecture). I implemented the logic for a 
+                    Distance-Vector router in python. This DV router receives 
+                    distance vectors from other routers and updates its routing 
+                    table appropriately. The router also transmits its own 
+                    DV to all other immediate neighbors as soon as any of its routes 
+                    change. It avoids routing loops by using Poisoned Reverse and 
+                    Split Horizon. I also implemented a slighty simplified version of 
+                    TCP. This implementation is capable of handing the 3-way handshake, 
+                    receieving data both in-order and out of order, sending data, 
+                    adjusting the send window based on the advertised window, 
+                    retransmissions, and both a passive and active connection close.
+                </p>
             </div>
         </div>
         <div>
