@@ -1,65 +1,114 @@
 .site-header {
-    padding: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: auto;
 }
 
-.main-pic {
-    padding: 1.0rem;
+.name-header {
+    padding: 20px;
     float: left;
-    width: 260px;
+    height: fit-content
+}
+.name-header p {
+    font-family: Alegreya Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+
+    color: rgb(206, 206, 206);
+}
+.title-bar {
+    float: right;
+    padding: 5px;
+}
+
+.main-pic img {
+    width: 500px;
+    box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
 }
 
 img {
     max-width: 100%;
 }
 
-.about-me {
-    background-color: white;
-    padding: 30px;
-    margin: 30px;
-    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 30px;
-}
-
-.site-body {
-    padding: 10px 20% 10px 20%;
-}
-
-ul {
+.title-bar ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
-    background-color: #ffffff;
-    box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 30px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
   }
 
-li {
+.title-bar li {
+    padding: 5px;
     float: left;
-  }
-li a {
+}
+.title-bar li a {
     display: block;
-    color: rgb(0, 0, 0);
     text-align: center;
-    padding: 16px;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: normal;
+    color: #B6B6B6;
+    padding: 16px;
 }
 
-li a:hover {
-    background-color: #83ffe4;
-}
-
-p {
-    line-height: 1.8;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
+.title-bar li a:hover {
+    background-color: rgb(247, 247, 247);
+    border-radius: 18px;
+    color: #5c5c5c;
 }
 
 h2 {
     font-size: larger;
 }
+.column {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
 
+.footer {
+    
+}
+.welcome-text p{
+    padding: 10%;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 96px;
+    line-height: normal;
+    text-align: center;
+
+    color: #000000;
+}
 body {
+    margin: 0%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
+p {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+html {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: #FFFFFF;
+    background-repeat:no-repeat;
+    background: linear-gradient(180deg, #ADADAD 0%, rgba(255, 255, 255, 0) 66.67%), #FFFFFF;
+    background-repeat: no-repeat;
 }
